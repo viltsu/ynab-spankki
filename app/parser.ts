@@ -7,10 +7,10 @@ export class Parser {
         this.statements = statements;
     }
     parse() {
-        let rows = this.data.split('\n');
+        let rows = this.data.split("\n");
         let parts: string[];
         rows.map((value) => {
-            parts = value.split('\t');
+            parts = value.split("\t");
             if (parts.length < 4) {
                 return;
             }
