@@ -69,9 +69,6 @@ const nodeDebugInfos_HelloWorldComponent0:import0.StaticNodeDebugInfo[] = [
   ,(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
-  new import0.StaticNodeDebugInfo([],(null as any),{}),
   new import0.StaticNodeDebugInfo([
     import17.TemplateRef,
     import18.NgIf
@@ -93,14 +90,11 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
   _NgControlStatus_3_7:import16.NgControlStatus;
   _el_4:any;
   _text_5:any;
-  _el_6:any;
+  _anchor_6:any;
+  /*private*/ _appEl_6:import4.AppElement;
+  _TemplateRef_6_5:any;
+  _NgIf_6_6:import18.NgIf;
   _text_7:any;
-  _text_8:any;
-  _anchor_9:any;
-  /*private*/ _appEl_9:import4.AppElement;
-  _TemplateRef_9_5:any;
-  _NgIf_9_6:import18.NgIf;
-  _text_10:any;
   /*private*/ _expr_0:any;
   /*private*/ _expr_4:any;
   /*private*/ _expr_5:any;
@@ -109,7 +103,7 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
   /*private*/ _expr_8:any;
   /*private*/ _expr_9:any;
   /*private*/ _expr_10:any;
-  /*private*/ _expr_12:any;
+  /*private*/ _expr_11:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement) {
     super(_View_HelloWorldComponent0,renderType_HelloWorldComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_HelloWorldComponent0);
   }
@@ -120,21 +114,19 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
     this._text_2 = this.renderer.createText(parentRenderNode,'\n',this.debug(2,0,18));
     this._el_3 = this.renderer.createElement(parentRenderNode,'textarea',this.debug(3,1,0));
     this.renderer.setElementAttribute(this._el_3,'placeholder','paste data here');
+    this.renderer.setElementAttribute(this._el_3,'style','width: 100%; height: 200px;');
     this._DefaultValueAccessor_3_3 = new import12.DefaultValueAccessor(this.renderer,new import19.ElementRef(this._el_3));
     this._NG_VALUE_ACCESSOR_3_4 = [this._DefaultValueAccessor_3_3];
     this._NgModel_3_5 = new import14.NgModel((null as any),(null as any),(null as any),this._NG_VALUE_ACCESSOR_3_4);
     this._NgControl_3_6 = this._NgModel_3_5;
     this._NgControlStatus_3_7 = new import16.NgControlStatus(this._NgControl_3_6);
-    this._el_4 = this.renderer.createElement(parentRenderNode,'br',this.debug(4,1,73));
-    this._text_5 = this.renderer.createText(parentRenderNode,'\n',this.debug(5,1,77));
-    this._el_6 = this.renderer.createElement(parentRenderNode,'button',this.debug(6,2,0));
-    this._text_7 = this.renderer.createText(this._el_6,'download',this.debug(7,2,29));
-    this._text_8 = this.renderer.createText(parentRenderNode,'\n',this.debug(8,2,46));
-    this._anchor_9 = this.renderer.createTemplateAnchor(parentRenderNode,this.debug(9,3,0));
-    this._appEl_9 = new import4.AppElement(9,(null as any),this,this._anchor_9);
-    this._TemplateRef_9_5 = new import17.TemplateRef_(this._appEl_9,viewFactory_HelloWorldComponent1);
-    this._NgIf_9_6 = new import18.NgIf(this._appEl_9.vcRef,this._TemplateRef_9_5);
-    this._text_10 = this.renderer.createText(parentRenderNode,'\n',this.debug(10,3,90));
+    this._el_4 = this.renderer.createElement(parentRenderNode,'br',this.debug(4,1,109));
+    this._text_5 = this.renderer.createText(parentRenderNode,'\n',this.debug(5,1,113));
+    this._anchor_6 = this.renderer.createTemplateAnchor(parentRenderNode,this.debug(6,2,0));
+    this._appEl_6 = new import4.AppElement(6,(null as any),this,this._anchor_6);
+    this._TemplateRef_6_5 = new import17.TemplateRef_(this._appEl_6,viewFactory_HelloWorldComponent1);
+    this._NgIf_6_6 = new import18.NgIf(this._appEl_6.vcRef,this._TemplateRef_6_5);
+    this._text_7 = this.renderer.createText(parentRenderNode,'\n',this.debug(7,2,90));
     this._expr_0 = import8.UNINITIALIZED;
     var disposable_0:Function = this.renderer.listen(this._el_3,'ngModelChange',this.eventHandler(this._handle_ngModelChange_3_0.bind(this)));
     var disposable_1:Function = this.renderer.listen(this._el_3,'input',this.eventHandler(this._handle_input_3_1.bind(this)));
@@ -147,8 +139,7 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
     this._expr_8 = import8.UNINITIALIZED;
     this._expr_9 = import8.UNINITIALIZED;
     this._expr_10 = import8.UNINITIALIZED;
-    var disposable_3:Function = this.renderer.listen(this._el_6,'click',this.eventHandler(this._handle_click_6_0.bind(this)));
-    this._expr_12 = import8.UNINITIALIZED;
+    this._expr_11 = import8.UNINITIALIZED;
     this.init([],[
       this._el_0,
       this._text_1,
@@ -156,17 +147,13 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
       this._el_3,
       this._el_4,
       this._text_5,
-      this._el_6,
-      this._text_7,
-      this._text_8,
-      this._anchor_9,
-      this._text_10
+      this._anchor_6,
+      this._text_7
     ]
     ,[
       disposable_0,
       disposable_1,
-      disposable_2,
-      disposable_3
+      disposable_2
     ]
     ,[subscription_0]);
     return (null as any);
@@ -177,8 +164,8 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
     if (((token === import14.NgModel) && (3 === requestNodeIndex))) { return this._NgModel_3_5; }
     if (((token === import15.NgControl) && (3 === requestNodeIndex))) { return this._NgControl_3_6; }
     if (((token === import16.NgControlStatus) && (3 === requestNodeIndex))) { return this._NgControlStatus_3_7; }
-    if (((token === import17.TemplateRef) && (9 === requestNodeIndex))) { return this._TemplateRef_9_5; }
-    if (((token === import18.NgIf) && (9 === requestNodeIndex))) { return this._NgIf_9_6; }
+    if (((token === import17.TemplateRef) && (6 === requestNodeIndex))) { return this._TemplateRef_6_5; }
+    if (((token === import18.NgIf) && (6 === requestNodeIndex))) { return this._NgIf_6_6; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
@@ -194,11 +181,11 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
       this._expr_4 = currVal_4;
     }
     if ((changes !== (null as any))) { this._NgModel_3_5.ngOnChanges(changes); }
-    this.debug(9,3,3);
-    const currVal_12:any = this.context.content;
-    if (import5.checkBinding(throwOnChange,this._expr_12,currVal_12)) {
-      this._NgIf_9_6.ngIf = currVal_12;
-      this._expr_12 = currVal_12;
+    this.debug(6,2,3);
+    const currVal_11:any = this.context.content;
+    if (import5.checkBinding(throwOnChange,this._expr_11,currVal_11)) {
+      this._NgIf_6_6.ngIf = currVal_11;
+      this._expr_11 = currVal_11;
     }
     this.detectContentChildrenChanges(throwOnChange);
     this.debug(1,0,4);
@@ -267,12 +254,6 @@ class _View_HelloWorldComponent0 extends import3.DebugAppView<import1.HelloWorld
     const pd_0:any = ((<any>this._DefaultValueAccessor_3_3.onTouched()) !== false);
     return (true && pd_0);
   }
-  private _handle_click_6_0($event:any):boolean {
-    this.markPathToRootAsCheckOnce();
-    this.debug(6,2,8);
-    const pd_0:any = ((<any>this.context.download()) !== false);
-    return (true && pd_0);
-  }
 }
 export function viewFactory_HelloWorldComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import4.AppElement):import3.AppView<import1.HelloWorldComponent> {
   if ((renderType_HelloWorldComponent === (null as any))) { (renderType_HelloWorldComponent = viewUtils.createRenderComponentType('/home/viltsu/WebstormProjects/ynab2/app/app.component.html',0,import10.ViewEncapsulation.None,styles_HelloWorldComponent,{})); }
@@ -291,9 +272,9 @@ class _View_HelloWorldComponent1 extends import3.DebugAppView<any> {
     super(_View_HelloWorldComponent1,renderType_HelloWorldComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways,nodeDebugInfos_HelloWorldComponent1);
   }
   createInternal(rootSelector:string):import4.AppElement {
-    this._el_0 = this.renderer.createElement((null as any),'a',this.debug(0,3,0));
+    this._el_0 = this.renderer.createElement((null as any),'a',this.debug(0,2,0));
     this.renderer.setElementAttribute(this._el_0,'download','tili.csv');
-    this._text_1 = this.renderer.createText(this._el_0,'download',this.debug(1,3,78));
+    this._text_1 = this.renderer.createText(this._el_0,'download',this.debug(1,2,78));
     this._expr_1 = import8.UNINITIALIZED;
     var disposable_0:Function = this.renderer.listen(this._el_0,'click',this.eventHandler(this._handle_click_0_0.bind(this)));
     this.init([].concat([this._el_0]),[
@@ -305,7 +286,7 @@ class _View_HelloWorldComponent1 extends import3.DebugAppView<any> {
   }
   detectChangesInternal(throwOnChange:boolean):void {
     this.detectContentChildrenChanges(throwOnChange);
-    this.debug(0,3,19);
+    this.debug(0,2,19);
     const currVal_1:any = this.parent.context.dataUrl;
     if (import5.checkBinding(throwOnChange,this._expr_1,currVal_1)) {
       this.renderer.setElementProperty(this._el_0,'href',this.viewUtils.sanitizer.sanitize(import20.SecurityContext.URL,currVal_1));
@@ -315,7 +296,7 @@ class _View_HelloWorldComponent1 extends import3.DebugAppView<any> {
   }
   private _handle_click_0_0($event:any):boolean {
     this.markPathToRootAsCheckOnce();
-    this.debug(0,3,56);
+    this.debug(0,2,56);
     const pd_0:any = ((<any>this.parent.context.doDataUrl()) !== false);
     return (true && pd_0);
   }

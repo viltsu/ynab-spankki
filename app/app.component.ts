@@ -20,6 +20,6 @@ export class HelloWorldComponent {
     let parser = new Parser(statements);
     parser.data = this.content;
     parser.parse();
-    this.dataUrl = this.sanitizer.bypassSecurityTrustResourceUrl(statements.toCSV());
+    this.dataUrl = this.sanitizer.bypassSecurityTrustResourceUrl(encodeURI(statements.toCSV()));
   }
 }

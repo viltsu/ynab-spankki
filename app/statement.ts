@@ -2,7 +2,7 @@ export class Statement {
     Date: string;
     Description: string;
     Payee: string;
-    Meno: string;
+    Memo: string;
     Outflow: string;
     Inflow: string;
 }
@@ -11,7 +11,7 @@ const keys: string[] = [
     'Date',
     'Description',
     'Payee',
-    'Meno',
+    'Memo',
     'Outflow',
     'Inflow'
 ];
@@ -25,7 +25,7 @@ export class Statements {
         this.statements.push(statement);
     }
     toCSV() {
-        let csv: string = keys.join(',') + "\n";
+        let csv: string = keys.join(',') + '\n';
         this.statements.map((value: Statement) => {
             let row: string[] = [
                 (<any>value)[keys[0]] || '',
@@ -35,8 +35,8 @@ export class Statements {
                 (<any>value)[keys[4]] || '',
                 (<any>value)[keys[5]] || '',
             ];
-            csv += row.join(',') + "\n";
+            csv += row.join(',') + '\n';
         });
-        return 'data:application/octet-stream;filename=tili.csv,' + csv;
+        return 'data:text/csv;charset=utf-8,' + csv;
     }
 }
