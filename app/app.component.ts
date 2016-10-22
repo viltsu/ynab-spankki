@@ -13,7 +13,6 @@ export class HelloWorldComponent {
   dataUrl: any = '/';
 
   constructor(private sanitizer: DomSanitizer) {
-    console.log('Environment config');
   }
 
   doDataUrl() {
