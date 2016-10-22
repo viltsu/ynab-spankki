@@ -23,13 +23,4 @@ export class HelloWorldComponent {
     parser.parse();
     this.dataUrl = this.sanitizer.bypassSecurityTrustResourceUrl(statements.toCSV());
   }
-
-  download() {
-    let statements = new Statements();
-    let parser = new Parser(statements);
-    parser.data = this.content;
-    parser.parse();
-    let csv = encodeURI(statements.toCSV());
-    window.open(csv, 'tili.csv');
-  }
 }
