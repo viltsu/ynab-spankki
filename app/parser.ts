@@ -1,4 +1,4 @@
-import { Statements, Statement } from './statement'
+import { Statements, Statement } from './statement';
 
 export class Parser {
     data: string;
@@ -7,10 +7,10 @@ export class Parser {
         this.statements = statements;
     }
     parse() {
-        let rows = this.data.split("\n");
-        let parts;
+        let rows = this.data.split('\n');
+        let parts: string[];
         rows.map((value) => {
-            parts = value.split("\t");
+            parts = value.split('\t');
             if (parts.length < 4) {
                 return;
             }

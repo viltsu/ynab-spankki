@@ -1,0 +1,4 @@
+<h1>{{title}}</h1>
+<textarea [(ngModel)]="content" placeholder="paste data here"></textarea><br>
+<button (click)="download()">download</button>
+<a *ngIf="content" [href]="dataUrl" download="tili.csv" (click)="doDataUrl()">download</a>
